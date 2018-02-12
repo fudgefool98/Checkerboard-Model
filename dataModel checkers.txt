@@ -1,0 +1,61 @@
+collect and display player names
+
+class player{
+
+sting name
+player1 t/f
+arrayList<pieces>
+
+}
+class board{
+	needs knowledge of which x/y values 
+	are populated so it can coordinate 
+	with each piece to determine if moves are legal
+	or if there is a piece in the way
+}
+
+arrayList<player>(player 1, player 2){
+for itterating through which player's turn 
+}
+
+p1 is black p2 is red (or the other way)
+
+dynamically create peices based on # left and which have been placed where and 
+where they were eliminated
+
+class game{
+
+	arrayList<player>(player 1, player 2){
+	for itterating through which player's turn 
+	}
+	
+	moves are legal if they move for p1 if the piece is directed y+1 and x+1/x-1 
+	unless y=max or x=max/min
+	p1
+	--------
+	--------
+	--------
+	--------
+	p2
+	}
+	
+	if all player peices are eliminated other player wins
+	
+	(no draw considered)
+	
+	upgrade king piece by reaching y=max
+	kings can move in y+/- and x+/- as long as doesn't exceed max/min
+	
+class board Piece{
+	position x
+	position y
+	king t/f
+
+	getPosible move{
+	returns posible moves based on current position
+	}
+	setNewXY{
+	sets x/y based on move or initialization
+	}
+
+}
